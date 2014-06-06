@@ -111,4 +111,4 @@ If Bucket didn't suit your needs, you might prefer one of the following:
 * [Stubbles](http://www.stubbles.net/wiki/Docs/IOC)
 * [Sphicy](http://www.beberlei.de/sphicy/)
 * [Substrate](http://substrate-php.org/)
-* [Crafty](http://phpcrafty.sourceforge.net/index.php)
+* [Crafty](http://phpcrafty.sourceforge.net/index.php) 
