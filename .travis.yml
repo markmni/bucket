@@ -1,0 +1,13 @@
+language: php
+
+php:
+  - 5.3
+
+before_script:
+  - wget http://downloads.sourceforge.net/project/simpletest/simpletest/simpletest_1.1/simpletest_1.1.0.tar.gz -O simpletest.tar.gz
+  - tar xf simpletest.tar.gz
+  - mv simpletest/ ./Bucket/Bucket/tests/
+  - cd ./Bucket/Bucket/tests
+
+script:
+  - php bucket.test.php
