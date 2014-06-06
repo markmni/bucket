@@ -61,9 +61,8 @@ If you need more complicated creational logic, you can attatch a factory to the 
 
 The container is passed to factories, so it can resolve further dependencies.
 
-Bucket also supports callbacks for factories. This isn't very useful at the moment, but once PHP 5.3 is released, you can use anonymous functions for registering factories:
+Bucket also supports callbacks for factories, so you can use anonymous functions for registering factories:
 
-    // Requires php 5.3+
     $factory = new StdClass();
     $factory->new_pdo = function($container) {
       return new PDO("mysql:host=localhost;dbname=addressbook", "root", "secret");
@@ -72,7 +71,6 @@ Bucket also supports callbacks for factories. This isn't very useful at the mome
 
 or:
 
-    // Requires php 5.3+
     $bucket = new bucket_Container(
       array(
         'pdo' => function($container) {
@@ -91,6 +89,15 @@ Bucket supports nested scopes for fine-tuned management of lifecycles.
     $bar = $scope->get('Cuux');
 
 In the above example, state is maintained on the scoped container `$scope` - not the on `$top`.
+
+This Fork
+--
+
+Currently requires PHP 5.3 or greater
+
+New Features
+* Support for the PSR-0 autoloading standard
+* Support for namespaces in factories (replace '\' in fully qualified type names with '_' when defining function names).
 
 Alternatives
 ==
