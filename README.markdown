@@ -1,6 +1,8 @@
 Bucket - Basic di-container for php.
 ==
 
+[![Build Status](https://travis-ci.org/markmni/bucket.svg?branch=master)](https://travis-ci.org/markmni/bucket)
+
 Bucket is a very minimal, yet useful [di-container](http://www.picocontainer.org/patterns.html) for PHP. It's easy to get started with and offers an open ended migration-path to a more full-featured framework, should you get the need later.
 
 Unlike many other containers, Bucket doesn't have a very intelligent factory. This means **no configuration**, and a very **short learning-path**. It also means that you can use Bucket as a front-end for a more sophisticated di-container.
