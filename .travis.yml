@@ -6,8 +6,8 @@ php:
 before_script:
   - wget http://downloads.sourceforge.net/project/simpletest/simpletest/simpletest_1.1/simpletest_1.1.0.tar.gz -O simpletest.tar.gz
   - tar xf simpletest.tar.gz
-  - mv simpletest/ ./Bucket/Bucket/tests/
-  - cd ./Bucket/Bucket/tests
+  - mv simpletest/ ./Bucket/Bucket/Tests/simpletest
+  - cd ./Bucket/Bucket/Tests
 
 script:
   - php bucket.test.php
