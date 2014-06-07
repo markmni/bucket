@@ -2,7 +2,7 @@
 
 namespace Bucket\Tests;
 
-require_once DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . 'Utilities' . DIRECTORY_SEPARATOR . 'Autoloader.php';
+require_once '..' . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . 'Utilities' . DIRECTORY_SEPARATOR . 'Autoloader.php';
 require_once 'simpletest/unit_tester.php';
 if (realpath($_SERVER['PHP_SELF']) == __FILE__) {
   error_reporting(E_ALL | E_STRICT);
